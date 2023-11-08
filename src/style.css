@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* write your CSS here */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141843;
+}
+
+h1 {
+  color: #141843;
+  font-family: Merriweather;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #5f627a;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h3 {
+  color: #141843;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+p,
+button {
+  color: #141843;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.profile-card {
+  border-radius: 30px;
+  border: 20px solid #fff;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 16px 28px 36px 28px;
+  display: flex;
+  gap: 18px;
+  width: 80%;
+}
+
+.profile-pic {
+  height: 250px;
+  width: 250px;
+  flex-shrink: 0;
+  border: 10px solid #e6e6e6;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic img {
+  height: 250px;
+  object-fit: fill;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 0 8px 0;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.interaction {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.stats {
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+}
+
+.vertical {
+  border-left: 1px solid #141843;
+  height: 60px;
+}
+
+.buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.follow-button {
+  display: flex;
+  width: 160px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid #141843;
+  background: #aef1f5;
+}
+
+.view-profile-button {
+  display: flex;
+  width: 160px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid #141843;
+  background: #ffddb6;
+}
+
+@media screen and (max-width: 940px) {
+  .profile-card {
+    border: 14px solid #fff;
+    flex-direction: column;
+    gap: 0px;
+    width: 95%;
+  }
+
+  .profile-pic {
+    align-self: center;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .stats {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p,
+  button {
+    font-size: 16px;
+  }
+
+  .follow-button {
+    padding: 12px;
+  }
+
+  .view-profile-button {
+    padding: 12px;
+  }
+}
